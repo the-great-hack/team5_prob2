@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PriceCellView" customModule="MultiModeTranspot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToD-vQ-mlq">
+                    <rect key="frame" x="16" y="10" width="34.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Arrival Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ml-4L-PvO">
+                    <rect key="frame" x="16" y="41" width="185.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="450" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-ID-AqK">
+                    <rect key="frame" x="60.5" y="10" width="343.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="12:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-rX-wO1">
+                    <rect key="frame" x="211.5" y="41" width="192.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2kS-ID-AqK" secondAttribute="trailing" constant="10" id="2by-RV-KzY"/>
+                <constraint firstItem="ToD-vQ-mlq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="FNq-iI-KyA"/>
+                <constraint firstItem="ToD-vQ-mlq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Jpp-De-ZZF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OLK-rX-wO1" secondAttribute="trailing" constant="10" id="TWf-5j-8sj"/>
+                <constraint firstItem="8Ml-4L-PvO" firstAttribute="top" secondItem="ToD-vQ-mlq" secondAttribute="bottom" constant="10" id="Xs3-ZD-TZW"/>
+                <constraint firstItem="OLK-rX-wO1" firstAttribute="top" secondItem="2kS-ID-AqK" secondAttribute="bottom" constant="10" id="Yts-u0-bmf"/>
+                <constraint firstItem="8Ml-4L-PvO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="akF-P9-pBi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Ml-4L-PvO" secondAttribute="bottom" constant="10" id="hv3-gv-Dxy"/>
+                <constraint firstItem="2kS-ID-AqK" firstAttribute="leading" secondItem="ToD-vQ-mlq" secondAttribute="trailing" constant="10" id="mxl-w0-EDR"/>
+                <constraint firstItem="2kS-ID-AqK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nkj-ce-lNY"/>
+                <constraint firstItem="OLK-rX-wO1" firstAttribute="leading" secondItem="8Ml-4L-PvO" secondAttribute="trailing" constant="10" id="z37-nf-N1Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="priceLabel" destination="2kS-ID-AqK" id="1N9-JP-nDp"/>
+                <outlet property="timeLabel" destination="OLK-rX-wO1" id="y1N-LD-oom"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
