@@ -20,7 +20,6 @@ class MapViewController: UIViewController {
 
     @IBAction func actionChalo(_ sender: Any) {
         guard let ctrl = storyboard?.instantiateViewController(identifier: "ResultViewController") else {return}
-        ctrl.modalPresentationStyle = .fullScreen
         present(ctrl, animated: true, completion: nil)
     }
     

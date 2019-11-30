@@ -136,7 +136,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qL-3F-HYv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="6dv-st-aB4">
@@ -179,12 +179,21 @@
                                     <outlet property="delegate" destination="rBT-7H-VPO" id="4a1-w3-8bG"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeV-LW-Gmj">
+                                <rect key="frame" x="310" y="10" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="actionClose:" destination="rBT-7H-VPO" eventType="touchUpInside" id="UH7-BY-CrH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZeV-LW-Gmj" firstAttribute="top" secondItem="l0S-Cq-S5V" secondAttribute="topMargin" constant="10" id="1zO-cQ-iGM"/>
                             <constraint firstItem="1qL-3F-HYv" firstAttribute="leading" secondItem="W2l-C5-wGL" secondAttribute="leading" id="FE3-Yi-0PP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZeV-LW-Gmj" secondAttribute="trailing" constant="10" id="OBG-aC-NVs"/>
                             <constraint firstItem="W2l-C5-wGL" firstAttribute="bottom" secondItem="1qL-3F-HYv" secondAttribute="bottom" id="Ozn-82-iR4"/>
-                            <constraint firstItem="1qL-3F-HYv" firstAttribute="top" secondItem="W2l-C5-wGL" secondAttribute="top" id="Wpp-Q0-Nlm"/>
+                            <constraint firstItem="1qL-3F-HYv" firstAttribute="top" secondItem="W2l-C5-wGL" secondAttribute="top" constant="30" id="Wpp-Q0-Nlm"/>
                             <constraint firstItem="W2l-C5-wGL" firstAttribute="trailing" secondItem="1qL-3F-HYv" secondAttribute="trailing" id="tvr-bp-Ibx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W2l-C5-wGL"/>

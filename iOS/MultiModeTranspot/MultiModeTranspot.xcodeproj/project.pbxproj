@@ -107,17 +107,13 @@
 		50922E1323929C6B00FFD2C3 /* MultiModeTranspot */ = {
 			isa = PBXGroup;
 			children = (
-				50922E1423929C6B00FFD2C3 /* AppDelegate.swift */,
+				7AF8D0F12392D30300EE0276 /* App */,
+				7AF8D0F02392D2F400EE0276 /* UseCase */,
+				7AF8D0F22392D30900EE0276 /* Resources */,
 				50922E1823929C6B00FFD2C3 /* Main.storyboard */,
 				50922E1B23929C6D00FFD2C3 /* Assets.xcassets */,
 				50922E1D23929C6D00FFD2C3 /* LaunchScreen.storyboard */,
 				50922E2023929C6D00FFD2C3 /* Info.plist */,
-				7A7A32F32392B3B50067A9D0 /* MapViewController.swift */,
-				7A7A32F92392B56A0067A9D0 /* RideOptionView.xib */,
-				7A7A32FB2392B67E0067A9D0 /* PirceCellView.xib */,
-				7A7A32FD2392B7730067A9D0 /* ResultViewController.swift */,
-				7A7A32FF2392BAB20067A9D0 /* RideOptionView.swift */,
-				7A7A33012392BABC0067A9D0 /* PriceCellView.swift */,
 			);
 			path = MultiModeTranspot;
 			sourceTree = "<group>";
@@ -138,6 +134,34 @@
 				50922E3623929C6D00FFD2C3 /* Info.plist */,
 			);
 			path = MultiModeTranspotUITests;
+			sourceTree = "<group>";
+		};
+		7AF8D0F02392D2F400EE0276 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7A7A32F32392B3B50067A9D0 /* MapViewController.swift */,
+				7A7A32FD2392B7730067A9D0 /* ResultViewController.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		7AF8D0F12392D30300EE0276 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50922E1423929C6B00FFD2C3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7AF8D0F22392D30900EE0276 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A7A32F92392B56A0067A9D0 /* RideOptionView.xib */,
+				7A7A32FB2392B67E0067A9D0 /* PirceCellView.xib */,
+				7A7A32FF2392BAB20067A9D0 /* RideOptionView.swift */,
+				7A7A33012392BABC0067A9D0 /* PriceCellView.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
