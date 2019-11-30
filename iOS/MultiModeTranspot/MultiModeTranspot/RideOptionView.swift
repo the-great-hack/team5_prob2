@@ -23,7 +23,7 @@ class RideOptionView: UIView {
 
     var isFirstCell: Bool! {
         didSet {
-            separatorHeightConstraint.constant = 0
+            separatorHeightConstraint.constant = isFirstCell ? 0 : 30
         }
     }
     

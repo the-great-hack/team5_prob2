@@ -13,9 +13,9 @@ class PriceCellView: UIView {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
-    var price: Int! {
+    var price: String! {
         didSet {
-            priceLabel.text = "\(String(describing: price))"
+            priceLabel.text = price
         }
     }
     
