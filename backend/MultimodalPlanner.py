@@ -16,7 +16,7 @@ class MultiModal_Planner:
 		col = cellnum - rowstart
 		return (row,col)
 
-	def plan_path(self, startCell, endCell, pos_format="RC",algo="A*"):
+	def plan_path(self, startCell, endCell, pos_format="RC"):
 		route = []
 
 		grid = Grid(matrix=self.map)
@@ -42,6 +42,6 @@ class MultiModal_Planner:
 """
 plnr = MultiModal_Planner()
 plnr.load_Map('Map.csv')
-path,runs = plnr.plan_path(0, 24,"RC","A*")
+path,runs = plnr.plan_path(0, 24)
 print(path)
 """
