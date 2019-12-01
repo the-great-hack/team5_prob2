@@ -13,12 +13,12 @@ To make the trip cost-effective and less hectic by having minimal transport swit
 * Latitude and longitude obtained from user for pickup and destination are being hardcoded to a location based grid.
 * To formulate accurate optimal solution, user is asked two below queries before booking: 
 	* Total number of passengers and Preference among cost or time.
-* In any grid field,
-	5 All vehicles (Bike, Rickshaw, Go, Go Mini, Bus)
-	4 All vehicles except bus
-	3 Bike and rickshaw
-	2 Only bike
-	1 NULL = Vehicle is not allowed to travel on this route
+* In any grid field,\n
+	5 = All vehicles (Bike, Rickshaw, Go, Go Mini, Bus)\n
+	4 = All vehicles except bus\n
+	2 = Bike and rickshaw\n
+	1 = Only bike\n
+	NULL = Vehicle is not allowed to travel on this route
 
 ![alt text](https://github.com/the-great-hack/team5_prob2/blob/master/image-2.png "")
 
