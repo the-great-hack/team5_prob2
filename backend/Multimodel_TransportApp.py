@@ -14,6 +14,8 @@ def get_user_preferences_API():
 
 def main():
 
+	print("________________")
+
 	user_preferences = get_user_preferences_json("user_prefs.json")
 	print("User Preferences : ",user_preferences)
 
@@ -23,11 +25,15 @@ def main():
 	print("Planned Path : ",path)
 
 	modes = ["Bike","Go","GoMini","Rikshaw","Bus"]
-	optimizer = MultimodalOptimizer.MultiModal_Optimizer(user_preferences,path,modes,max_switches=2)
+
+	max_switches = 2
+
+	optimizer = MultimodalOptimizer.MultiModal_Optimizer(user_preferences,path,modes,max_switches=max_switches)
 	optimizer.load_location_stats('location_stats.csv')
 	optimizer.generate_personalizedScores()
 	solution = optimizer.getSolutions_Combinatorial()
 	print("Solution : ", solution)
+
 
 	print("________________")
   

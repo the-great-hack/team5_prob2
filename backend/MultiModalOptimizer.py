@@ -62,6 +62,14 @@ class MultiModal_Optimizer:
 				return False
 		return True
 
+	def family_isValid(self,sol_desc):
+		for i in range( len(sol_desc) ):
+
+			if sol_desc[i][0] == 'Bike' and self.user_preferences['family'] == 1 :
+				return False
+
+		return True
+
 
 	def evaluateSolution(self,solution):
 		total_score = 0
@@ -93,7 +101,7 @@ class MultiModal_Optimizer:
 				potential_solution = list(modeComb) + list(switchComb) + [self.route[-1]]
 				#print(potential_solution)
 				desc_sol = self.sol_Describe( potential_solution )
-				if self.sameSwitch_isValid(desc_sol):
+				if self.sameSwitch_isValid(desc_sol) and self.family_isValid(desc_sol) :
 					curScore = self.evaluateSolution( desc_sol )
 					if curScore < bestScore:
 						bestScore = curScore

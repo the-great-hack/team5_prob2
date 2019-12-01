@@ -2,7 +2,7 @@
     "user_data": {
         "cost": 1,
         "time": 2,
-        "family": 1,
+        "family": 0,
         "pickup": 0,
         "dropoff": 24
     }
