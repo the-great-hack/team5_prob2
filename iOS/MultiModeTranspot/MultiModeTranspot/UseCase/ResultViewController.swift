@@ -4,24 +4,24 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
     
-    
-    let mockData = [
-                    RideModel(steps: [
-                            StepModel(locationTitle: "A", vehicleType: "Car"),
-                            StepModel(locationTitle: "B", vehicleType: "Bus"),
-                            StepModel(locationTitle: "C", vehicleType: "Completed")
-                            ],
-                        totalCost: "450", arrivalTime: "12:50PM"),
-                    
-                    RideModel(steps: [
-                        StepModel(locationTitle: "D", vehicleType: "Bike"),
-                        StepModel(locationTitle: "E", vehicleType: "Bus"),
-                        StepModel(locationTitle: "F", vehicleType: "Car"),
-                        StepModel(locationTitle: "E", vehicleType: "Completed")
-                        ],
-                    totalCost: "800", arrivalTime: "8:50 PM")
-                ]
-    
+    var mockData: [RideModel] = []
+//    var mockData = [
+//                    RideModel(steps: [
+//                            StepModel(locationTitle: "A", vehicleType: "Car"),
+//                            StepModel(locationTitle: "B", vehicleType: "Bus"),
+//                            StepModel(locationTitle: "C", vehicleType: "Completed")
+//                            ],
+//                        totalCost: "450", arrivalTime: "12:50PM"),
+//                    
+//                    RideModel(steps: [
+//                        StepModel(locationTitle: "D", vehicleType: "Bike"),
+//                        StepModel(locationTitle: "E", vehicleType: "Bus"),
+//                        StepModel(locationTitle: "F", vehicleType: "Car"),
+//                        StepModel(locationTitle: "E", vehicleType: "Completed")
+//                        ],
+//                    totalCost: "800", arrivalTime: "8:50 PM")
+//                ]
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
 

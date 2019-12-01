@@ -30,8 +30,17 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func actionChalo(_ sender: Any) {
-        guard let ctrl = storyboard?.instantiateViewController(identifier: "ResultViewController") else {return}
-        present(ctrl, animated: true, completion: nil)
+
+        RideService(networkManager: NetworkManager()).getRidesBetween(point1: mapView.userLocation.coordinate, point2: mapView.userLocation.coordinate, completion: {(result) in
+            switch result {
+            case .success(let rides):
+                guard let ctrl = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
+                ctrl.mockData = rides
+                self.present(ctrl, animated: true, completion: nil)
+            default:
+                break
+            }
+        })
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {

@@ -21,7 +21,7 @@ class RideService: RideServiceProtocol {
     }
     
     func getRidesBetween(point1: CLLocationCoordinate2D, point2: CLLocationCoordinate2D, completion: @escaping (APIResult<[RideModel]>) -> Void) {
-        let router = Routers.poiList(point1: point1, point2: point2)
+        let router = Routers.rides(point1: point1, point2: point2)
         networkManager.requestObject(router) { (data: Data?, error: String?) in
             guard let data = data, let ridesModel = try? JSONDecoder().decode([RideModel].self, from: data) else {
                 completion(APIResult.error(error ?? "Unknown error occured."))

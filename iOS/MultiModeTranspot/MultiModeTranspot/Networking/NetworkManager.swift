@@ -12,6 +12,7 @@ struct NetworkManager: NetworkManagerProtocol {
                 completion(nil, error?.localizedDescription)
                 return
             }
+            print(String(data: data, encoding: .utf8))
             completion(data, nil)
         }.resume()
     }
