@@ -1,26 +1,4 @@
-//
-//  ResultViewController.swift
-//  MultiModeTranspot
-//
-//  Created by Shakeel Ahmad on 30/11/2019.
-//  Copyright © 2019 Bashir Ahmad. All rights reserved.
-//
-
 import UIKit
-struct RideModel {
-    var steps: [StepModel]
-    var totalCost: String
-    var arrivalTime: String
-}
-
-struct StepModel {
-    var locationTitle: String
-    var vehicleType: String
-}
-
-func ==(_ lhs: StepModel, _ rhs: StepModel) -> Bool {
-    return lhs.locationTitle == rhs.locationTitle && lhs.vehicleType == rhs.vehicleType
-}
 
 class ResultViewController: UIViewController {
 
@@ -49,6 +27,7 @@ class ResultViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func actionClose(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

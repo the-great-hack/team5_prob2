@@ -11,32 +11,20 @@
 		50922E1A23929C6B00FFD2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50922E1823929C6B00FFD2C3 /* Main.storyboard */; };
 		50922E1C23929C6D00FFD2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50922E1B23929C6D00FFD2C3 /* Assets.xcassets */; };
 		50922E1F23929C6D00FFD2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50922E1D23929C6D00FFD2C3 /* LaunchScreen.storyboard */; };
-		50922E2A23929C6D00FFD2C3 /* MultiModeTranspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50922E2923929C6D00FFD2C3 /* MultiModeTranspotTests.swift */; };
-		50922E3523929C6D00FFD2C3 /* MultiModeTranspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50922E3423929C6D00FFD2C3 /* MultiModeTranspotUITests.swift */; };
 		7A7A32F42392B3B50067A9D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A32F32392B3B50067A9D0 /* MapViewController.swift */; };
 		7A7A32FA2392B56A0067A9D0 /* RideOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7A32F92392B56A0067A9D0 /* RideOptionView.xib */; };
 		7A7A32FC2392B67E0067A9D0 /* PirceCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A7A32FB2392B67E0067A9D0 /* PirceCellView.xib */; };
 		7A7A32FE2392B7730067A9D0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A32FD2392B7730067A9D0 /* ResultViewController.swift */; };
 		7A7A33002392BAB20067A9D0 /* RideOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A32FF2392BAB20067A9D0 /* RideOptionView.swift */; };
 		7A7A33022392BABC0067A9D0 /* PriceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A33012392BABC0067A9D0 /* PriceCellView.swift */; };
+		7AF8D0F4239385FA00EE0276 /* Daftarkhwan.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7AF8D0F3239385FA00EE0276 /* Daftarkhwan.gpx */; };
+		7AF8D0F723938F6C00EE0276 /* RideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D0F623938F6C00EE0276 /* RideModel.swift */; };
+		7AF8D0F923938F7500EE0276 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D0F823938F7500EE0276 /* StepModel.swift */; };
+		7AF8D1072393920700EE0276 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D0FC2393920600EE0276 /* NetworkManager.swift */; };
+		7AF8D1082393920700EE0276 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D0FD2393920600EE0276 /* Routers.swift */; };
+		7AF8D1092393920700EE0276 /* RouterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D0FE2393920600EE0276 /* RouterConfiguration.swift */; };
+		7AF8D10F2393920700EE0276 /* RideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8D1052393920700EE0276 /* RideService.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		50922E2623929C6D00FFD2C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50922E0923929C6B00FFD2C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50922E1023929C6B00FFD2C3;
-			remoteInfo = MultiModeTranspot;
-		};
-		50922E3123929C6D00FFD2C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50922E0923929C6B00FFD2C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50922E1023929C6B00FFD2C3;
-			remoteInfo = MultiModeTranspot;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		50922E1123929C6B00FFD2C3 /* MultiModeTranspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModeTranspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,10 +33,8 @@
 		50922E1B23929C6D00FFD2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50922E1E23929C6D00FFD2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50922E2023929C6D00FFD2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50922E2523929C6D00FFD2C3 /* MultiModeTranspotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModeTranspotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50922E2923929C6D00FFD2C3 /* MultiModeTranspotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModeTranspotTests.swift; sourceTree = "<group>"; };
 		50922E2B23929C6D00FFD2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50922E3023929C6D00FFD2C3 /* MultiModeTranspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModeTranspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50922E3423929C6D00FFD2C3 /* MultiModeTranspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModeTranspotUITests.swift; sourceTree = "<group>"; };
 		50922E3623929C6D00FFD2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A7A32F32392B3B50067A9D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -57,24 +43,17 @@
 		7A7A32FD2392B7730067A9D0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7A7A32FF2392BAB20067A9D0 /* RideOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideOptionView.swift; sourceTree = "<group>"; };
 		7A7A33012392BABC0067A9D0 /* PriceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCellView.swift; sourceTree = "<group>"; };
+		7AF8D0F3239385FA00EE0276 /* Daftarkhwan.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Daftarkhwan.gpx; sourceTree = "<group>"; };
+		7AF8D0F623938F6C00EE0276 /* RideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideModel.swift; sourceTree = "<group>"; };
+		7AF8D0F823938F7500EE0276 /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		7AF8D0FC2393920600EE0276 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7AF8D0FD2393920600EE0276 /* Routers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
+		7AF8D0FE2393920600EE0276 /* RouterConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterConfiguration.swift; sourceTree = "<group>"; };
+		7AF8D1052393920700EE0276 /* RideService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50922E0E23929C6B00FFD2C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2223929C6D00FFD2C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2D23929C6D00FFD2C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				50922E1123929C6B00FFD2C3 /* MultiModeTranspot.app */,
-				50922E2523929C6D00FFD2C3 /* MultiModeTranspotTests.xctest */,
-				50922E3023929C6D00FFD2C3 /* MultiModeTranspotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +86,9 @@
 			children = (
 				7AF8D0F12392D30300EE0276 /* App */,
 				7AF8D0F02392D2F400EE0276 /* UseCase */,
+				7AF8D0F523938F6000EE0276 /* Models */,
+				7AF8D1032393920700EE0276 /* Services */,
+				7AF8D0FB2393920600EE0276 /* Networking */,
 				7AF8D0F22392D30900EE0276 /* Resources */,
 				50922E1823929C6B00FFD2C3 /* Main.storyboard */,
 				50922E1B23929C6D00FFD2C3 /* Assets.xcassets */,
@@ -160,8 +140,36 @@
 				7A7A32FB2392B67E0067A9D0 /* PirceCellView.xib */,
 				7A7A32FF2392BAB20067A9D0 /* RideOptionView.swift */,
 				7A7A33012392BABC0067A9D0 /* PriceCellView.swift */,
+				7AF8D0F3239385FA00EE0276 /* Daftarkhwan.gpx */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7AF8D0F523938F6000EE0276 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8D0F623938F6C00EE0276 /* RideModel.swift */,
+				7AF8D0F823938F7500EE0276 /* StepModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7AF8D0FB2393920600EE0276 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8D0FC2393920600EE0276 /* NetworkManager.swift */,
+				7AF8D0FD2393920600EE0276 /* Routers.swift */,
+				7AF8D0FE2393920600EE0276 /* RouterConfiguration.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7AF8D1032393920700EE0276 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8D1052393920700EE0276 /* RideService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,42 +192,6 @@
 			productReference = 50922E1123929C6B00FFD2C3 /* MultiModeTranspot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		50922E2423929C6D00FFD2C3 /* MultiModeTranspotTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50922E3C23929C6D00FFD2C3 /* Build configuration list for PBXNativeTarget "MultiModeTranspotTests" */;
-			buildPhases = (
-				50922E2123929C6D00FFD2C3 /* Sources */,
-				50922E2223929C6D00FFD2C3 /* Frameworks */,
-				50922E2323929C6D00FFD2C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50922E2723929C6D00FFD2C3 /* PBXTargetDependency */,
-			);
-			name = MultiModeTranspotTests;
-			productName = MultiModeTranspotTests;
-			productReference = 50922E2523929C6D00FFD2C3 /* MultiModeTranspotTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		50922E2F23929C6D00FFD2C3 /* MultiModeTranspotUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50922E3F23929C6D00FFD2C3 /* Build configuration list for PBXNativeTarget "MultiModeTranspotUITests" */;
-			buildPhases = (
-				50922E2C23929C6D00FFD2C3 /* Sources */,
-				50922E2D23929C6D00FFD2C3 /* Frameworks */,
-				50922E2E23929C6D00FFD2C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50922E3223929C6D00FFD2C3 /* PBXTargetDependency */,
-			);
-			name = MultiModeTranspotUITests;
-			productName = MultiModeTranspotUITests;
-			productReference = 50922E3023929C6D00FFD2C3 /* MultiModeTranspotUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,14 +204,6 @@
 				TargetAttributes = {
 					50922E1023929C6B00FFD2C3 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					50922E2423929C6D00FFD2C3 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 50922E1023929C6B00FFD2C3;
-					};
-					50922E2F23929C6D00FFD2C3 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 50922E1023929C6B00FFD2C3;
 					};
 				};
 			};
@@ -257,8 +221,6 @@
 			projectRoot = "";
 			targets = (
 				50922E1023929C6B00FFD2C3 /* MultiModeTranspot */,
-				50922E2423929C6D00FFD2C3 /* MultiModeTranspotTests */,
-				50922E2F23929C6D00FFD2C3 /* MultiModeTranspotUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,20 +235,7 @@
 				50922E1C23929C6D00FFD2C3 /* Assets.xcassets in Resources */,
 				50922E1A23929C6B00FFD2C3 /* Main.storyboard in Resources */,
 				7A7A32FA2392B56A0067A9D0 /* RideOptionView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2323929C6D00FFD2C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2E23929C6D00FFD2C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7AF8D0F4239385FA00EE0276 /* Daftarkhwan.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,44 +246,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF8D10F2393920700EE0276 /* RideService.swift in Sources */,
 				7A7A32F42392B3B50067A9D0 /* MapViewController.swift in Sources */,
 				50922E1523929C6B00FFD2C3 /* AppDelegate.swift in Sources */,
 				7A7A32FE2392B7730067A9D0 /* ResultViewController.swift in Sources */,
 				7A7A33002392BAB20067A9D0 /* RideOptionView.swift in Sources */,
+				7AF8D1072393920700EE0276 /* NetworkManager.swift in Sources */,
 				7A7A33022392BABC0067A9D0 /* PriceCellView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2123929C6D00FFD2C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50922E2A23929C6D00FFD2C3 /* MultiModeTranspotTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50922E2C23929C6D00FFD2C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50922E3523929C6D00FFD2C3 /* MultiModeTranspotUITests.swift in Sources */,
+				7AF8D0F723938F6C00EE0276 /* RideModel.swift in Sources */,
+				7AF8D1092393920700EE0276 /* RouterConfiguration.swift in Sources */,
+				7AF8D1082393920700EE0276 /* Routers.swift in Sources */,
+				7AF8D0F923938F7500EE0276 /* StepModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50922E2723929C6D00FFD2C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50922E1023929C6B00FFD2C3 /* MultiModeTranspot */;
-			targetProxy = 50922E2623929C6D00FFD2C3 /* PBXContainerItemProxy */;
-		};
-		50922E3223929C6D00FFD2C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50922E1023929C6B00FFD2C3 /* MultiModeTranspot */;
-			targetProxy = 50922E3123929C6D00FFD2C3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50922E1823929C6B00FFD2C3 /* Main.storyboard */ = {
@@ -476,18 +402,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C5NH6K22Z4;
 				INFOPLIST_FILE = MultiModeTranspot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barq.consumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.barq.consumer";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,100 +423,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = C5NH6K22Z4;
 				INFOPLIST_FILE = MultiModeTranspot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barq.consumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.barq.consumer";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		50922E3D23929C6D00FFD2C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
-				INFOPLIST_FILE = MultiModeTranspotTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspotTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModeTranspot.app/MultiModeTranspot";
-			};
-			name = Debug;
-		};
-		50922E3E23929C6D00FFD2C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
-				INFOPLIST_FILE = MultiModeTranspotTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspotTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiModeTranspot.app/MultiModeTranspot";
-			};
-			name = Release;
-		};
-		50922E4023929C6D00FFD2C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
-				INFOPLIST_FILE = MultiModeTranspotUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspotUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MultiModeTranspot;
-			};
-			name = Debug;
-		};
-		50922E4123929C6D00FFD2C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E6FG5TL67;
-				INFOPLIST_FILE = MultiModeTranspotUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.bashir.careem.MultiModeTranspotUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MultiModeTranspot;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -609,24 +457,6 @@
 			buildConfigurations = (
 				50922E3A23929C6D00FFD2C3 /* Debug */,
 				50922E3B23929C6D00FFD2C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50922E3C23929C6D00FFD2C3 /* Build configuration list for PBXNativeTarget "MultiModeTranspotTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50922E3D23929C6D00FFD2C3 /* Debug */,
-				50922E3E23929C6D00FFD2C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50922E3F23929C6D00FFD2C3 /* Build configuration list for PBXNativeTarget "MultiModeTranspotUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50922E4023929C6D00FFD2C3 /* Debug */,
-				50922E4123929C6D00FFD2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
