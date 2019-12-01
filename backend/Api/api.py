@@ -14,37 +14,40 @@ def jsonString(name,email):
      "locationTitle": "Walton road lahore",
      "vehicleType": "Bus"
   },{
-     "locationTitle": "Gulberg",
+     "locationTitle": "Firdous Market",
      "vehicleType": "Car"
+  },{
+     "locationTitle": "Hafeez Center",
+     "vehicleType": "Completed"
   }],
-     "totalCost": "450",
+     "totalCost": "250",
      "arrivalTime": "9:45 PM"
   },{
     "steps":[{
-     "locationTitle": "Liberty Market",
+     "locationTitle": "DHA Phase 8",
      "vehicleType": "Car"
   },{
-     "locationTitle": "Mall road canal bridge",
-     "vehicleType": "Bus"
-  },{
-     "locationTitle": "Mughalpura Zakir tikka",
-     "vehicleType": "Car"
+     "locationTitle": "Hafeez Center",
+     "vehicleType": "Completed"
   }],
-     "totalCost": "350",
-     "arrivalTime": "1:45 PM"
+     "totalCost": "450",
+     "arrivalTime": "9:15 PM"
   },{
     "steps":[{
-     "locationTitle": "Hafeez Center",
+     "locationTitle": "DHA Phase 8",
      "vehicleType": "Car"
   },{
-     "locationTitle": "Firozpur road canal bridge",
+     "locationTitle": "Khayabane Jinah",
      "vehicleType": "Bus"
   },{
-     "locationTitle": "Johar town",
-     "vehicleType": "Car"
+     "locationTitle": "Siddique Trade center",
+     "vehicleType": "Bike"
+  },{
+     "locationTitle": "Hafeez Center",
+     "vehicleType": "Completed"
   }],
-     "totalCost": "275",
-     "arrivalTime": "2:45 PM"
+     "totalCost": "230",
+     "arrivalTime": "10:00 PM"
   }
   ]
   return json.dumps(dummy_data)
