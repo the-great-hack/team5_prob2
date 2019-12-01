@@ -12,9 +12,6 @@ def get_user_preferences_json(filePath):
 def get_user_preferences_API():
 	return {}
 
-def post_solutions(solutions):
-	pass
-
 def main():
 
 	user_preferences = get_user_preferences_json("user_prefs.json")
@@ -29,8 +26,8 @@ def main():
 	optimizer = MultimodalOptimizer.MultiModal_Optimizer(user_preferences,path,modes,max_switches=2)
 	optimizer.load_location_stats('location_stats.csv')
 	optimizer.generate_personalizedScores()
-	solutions = optimizer.getSolutions_Combinatorial()
-	post_solutions(solutions)
+	solution = optimizer.getSolutions_Combinatorial()
+	print("Solution : ", solution)
 
 	print("________________")
   

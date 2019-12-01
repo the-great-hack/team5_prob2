@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import itertools
 #import mlrose
+import math
 import time
 
 
@@ -49,11 +50,6 @@ class MultiModal_Optimizer:
 
 		return score
 
-	def evaluateSolution(self,solution):
-		score = 0
-
-		return score
-
 	def sol_Describe(self,sol_list):
 		sol_desc = []
 		noCombs = len(self.modeCombos[0])
@@ -62,32 +58,42 @@ class MultiModal_Optimizer:
 		return sol_desc
 
 
+	def evaluateSolution(self,solution):
+		total_score = 0
+
+		"""
+
+		startIndx = index( 0 )
+		endIndx = index( 1 )
+		cellNums = self.route[ startIndx , endIndx+1 ]
+		cur_score = self.fitnessFunction_subroute(  modeNum, cellNums )
+		total_score += cur_score
+
+		"""
+
+		return total_score
+
+
 	def getSolutions_Combinatorial(self,multiple_sols=True):
-		sols = {}
 
 		self.generate_ModeCombinations()
 		self.generate_SwitchCombinations(self.route)
+
+		bestSol = self.sol_Describe( list(self.modeCombos[0]) + list(self.switchCombos[0]) + [self.route[-1]] )
+		bestScore = math.inf
 
 		for modeComb in self.modeCombos:
 			for switchComb in self.switchCombos:
 				potential_solution = list(modeComb) + list(switchComb) + [self.route[-1]]
 				#print(potential_solution)
-				print(   self.sol_Describe( potential_solution ) )
+				desc_sol = self.sol_Describe( potential_solution ) 
+				#print(  desc_sol  )
+				curScore = self.evaluateSolution( desc_sol )
+				if curScore < bestScore:
+					bestScore = curScore
+					bestSol = desc_sol
 
-
-
-		"""
-
-		for modeComb in self.modeCombos:
-			print(modeComb)
-			switchComb = []
-			temp_route = [rtv for rtv in self.route]
-			for i in range(  len(switchComb)   ):
-				print("")
-
-		"""
-
-		return sols
+		return bestSol
 
 	def getSolutions_Metaheuristic(self,multiple_sols=True):
 		sols = {}
