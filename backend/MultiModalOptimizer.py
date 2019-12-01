@@ -40,9 +40,8 @@ class MultiModal_Optimizer:
 
 		print("Personalized Scores : ",self.loc_df.head(5))
 
-	def fitnessFunction_subroute(self,modeNum,cellNums):
+	def fitnessFunction_subroute(self,modeName,cellNums):
 		score = 0
-		modeName = self.modes[modeNum]
 
 		for cellnum in cellNums:
 			modecellScore = self.loc_df[ modeName+'_Score'].values[cellnum]
@@ -67,17 +66,16 @@ class MultiModal_Optimizer:
 	def evaluateSolution(self,solution):
 		total_score = 0
 
-		"""
+		
 		for i in range( len(solution) -1):
-			#print(solution)
-			#print(    )
+
 			startIndx = self.route.index( solution[i][1] )
 			endIndx = self.route.index( solution[i+1][1] )
-			cellNums = self.route[ startIndx , endIndx+1 ]
-			modeNum = solution[i][0]
-			cur_score = self.fitnessFunction_subroute(  modeNum, cellNums )
+			cellNums = self.route[ startIndx : endIndx+1 ]
+			cur_mode = solution[i][0]
+			cur_score = self.fitnessFunction_subroute( cur_mode , cellNums )
 			total_score += cur_score
-		"""
+
 
 		return total_score
 
