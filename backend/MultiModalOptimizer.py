@@ -40,9 +40,8 @@ class MultiModal_Optimizer:
 
 		print("Personalized Scores : ",self.loc_df.head(5))
 
-	def fitnessFunction_subroute(self,modeNum,cellNums):
+	def fitnessFunction_subroute(self,modeName,cellNums):
 		score = 0
-		modeName = self.modes[modeNum]
 
 		for cellnum in cellNums:
 			modecellScore = self.loc_df[ modeName+'_Score'].values[cellnum]
@@ -54,22 +53,29 @@ class MultiModal_Optimizer:
 		sol_desc = []
 		noCombs = len(self.modeCombos[0])
 		for i in range( noCombs ):
-			sol_desc.append(   ( self.modes[sol_list[i]]  , sol_list[ i + noCombs ])       )
+			sol_desc.append(   ( self.modes[sol_list[i]]  , sol_list[ i + noCombs ])   )
 		return sol_desc
+
+	def sameSwitch_isValid(self,sol_desc):
+		for i in range( len(sol_desc)-1):
+			if sol_desc[i][0] == sol_desc[i+1][0]:
+				return False
+		return True
 
 
 	def evaluateSolution(self,solution):
 		total_score = 0
 
-		"""
+		
+		for i in range( len(solution) -1):
 
-		startIndx = index( 0 )
-		endIndx = index( 1 )
-		cellNums = self.route[ startIndx , endIndx+1 ]
-		cur_score = self.fitnessFunction_subroute(  modeNum, cellNums )
-		total_score += cur_score
+			startIndx = self.route.index( solution[i][1] )
+			endIndx = self.route.index( solution[i+1][1] )
+			cellNums = self.route[ startIndx : endIndx+1 ]
+			cur_mode = solution[i][0]
+			cur_score = self.fitnessFunction_subroute( cur_mode , cellNums )
+			total_score += cur_score
 
-		"""
 
 		return total_score
 
@@ -86,12 +92,12 @@ class MultiModal_Optimizer:
 			for switchComb in self.switchCombos:
 				potential_solution = list(modeComb) + list(switchComb) + [self.route[-1]]
 				#print(potential_solution)
-				desc_sol = self.sol_Describe( potential_solution ) 
-				#print(  desc_sol  )
-				curScore = self.evaluateSolution( desc_sol )
-				if curScore < bestScore:
-					bestScore = curScore
-					bestSol = desc_sol
+				desc_sol = self.sol_Describe( potential_solution )
+				if self.sameSwitch_isValid(desc_sol):
+					curScore = self.evaluateSolution( desc_sol )
+					if curScore < bestScore:
+						bestScore = curScore
+						bestSol = desc_sol
 
 		return bestSol
 
