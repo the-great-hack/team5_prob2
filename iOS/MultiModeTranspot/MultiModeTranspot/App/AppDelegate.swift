@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  MultiModeTranspot
-//
-//  Created by Bashir Ahmad on 30/11/2019.
-//  Copyright © 2019 Bashir Ahmad. All rights reserved.
-//
+
 
 import UIKit
 
