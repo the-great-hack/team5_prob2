@@ -16,7 +16,10 @@ class MultiModal_Planner:
 		col = cellnum - rowstart
 		return (row,col)
 
-	def plan_path(self, startCell, endCell, pos_format="RC"):
+	def rcToCell(self,row,col):
+		return row*self.noRows + col
+
+	def plan_path(self, startCell, endCell):
 		route = []
 
 		grid = Grid(matrix=self.map)
@@ -30,14 +33,13 @@ class MultiModal_Planner:
 		finder = AStarFinder(diagonal_movement=DiagonalMovement.always)
 		path, runs = finder.find_path(start_node, end_node, grid)
 
-		if pos_format == "RC":
-			transformed_path = []
-			for tplnum in range( len(path) ):
-				transformed_path.append(  (path[tplnum][1],path[tplnum][0])  )
+		transformed_path = []
+		for tplnum in range( len(path) ):
+			inv_cellNum = self.rcToCell(   path[tplnum][1] , path[tplnum][0]   )
+			transformed_path.append(  inv_cellNum  )
+			#transformed_path.append(  (path[tplnum][1],path[tplnum][0])  )
 
-			return transformed_path,runs
-
-		return path,runs
+		return transformed_path,runs
 
 """
 plnr = MultiModal_Planner()

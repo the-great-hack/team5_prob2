@@ -18,12 +18,12 @@ def post_solutions(solutions):
 def main():
 
 	user_preferences = get_user_preferences_json("user_prefs.json")
-	print(user_preferences)
+	print("User Preferences : ",user_preferences)
 
 	planner = MultimodalPlanner.MultiModal_Planner()
 	planner.load_Map('Map.csv')
 	path,runs = planner.plan_path( user_preferences['pickup'] , user_preferences['dropoff'])
-	print(path)
+	print("Planned Path : ",path)
 
 	modes = ["Bike","Go","GoMini","Rikshaw","Bus"]
 	optimizer = MultimodalOptimizer.MultiModal_Optimizer(user_preferences,path,modes,max_switches=2)
