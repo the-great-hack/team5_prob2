@@ -18,4 +18,4 @@ To make the trip cost-effective and less hectic by having minimal transport swit
 	* Only bike
 	* NULL = Vehicle is not allowed to travel on this route
 
-![picture alt](image-2 "")
+![picture alt](./image-2 "")
