@@ -23,11 +23,9 @@ To make the trip cost-effective and less hectic by having minimal transport swit
 ![alt text](https://github.com/the-great-hack/team5_prob2/blob/master/image-2.png "")
 
 # Technology Stack:
-Back-end: Python
-Front-end: iOS App
-Continuous Development: GitHub
-A* algorithm using pathfinding library where heuristic = Euclidean Distance
-h = sqrt ((current.x – goal.x)2 + (current.y – goal.y)2 )
+	* Back-end: Python
+	* Front-end: iOS App
+	* Continuous Development: GitHub
 
 # Future Prospects:
 * Carpooling for people coming from same areas and on same time. This would be quite useful for students/ office colleagues etc. 
