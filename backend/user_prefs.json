@@ -1,7 +1,7 @@
 {
     "user_data": {
-        "cost": 1.2,
-        "time": 1,
+        "cost": 1,
+        "time": 2,
         "family": 1,
         "pickup": 0,
         "dropoff": 24
