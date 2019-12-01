@@ -94,8 +94,7 @@ class MultiModal_Optimizer:
 			for switchComb in self.switchCombos:
 				potential_solution = list(modeComb) + list(switchComb) + [self.route[-1]]
 				#print(potential_solution)
-				desc_sol = self.sol_Describe( potential_solution ) 
-				print(  desc_sol  )
+				desc_sol = self.sol_Describe( potential_solution )
 				if self.sameSwitch_isValid(desc_sol):
 					curScore = self.evaluateSolution( desc_sol )
 					if curScore < bestScore:
